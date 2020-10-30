@@ -1,0 +1,4 @@
+#!/bin/sh
+# Need to install xdo package
+
+alacritty --working-directory "$(readlink -e /proc/"$(pgrep -P "$(xdo pid)" | tail -n 1)"/cwd)"

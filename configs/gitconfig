@@ -1,0 +1,13 @@
+[pull]
+	rebase = True
+[core]
+	editor = nvim
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = false
+	verbose = true
+[log]
+	date = local
+[advice]
+	detachedHead = false
