@@ -21,10 +21,13 @@
 
     # window manager & friends / dotfiles stuff
     alacritty
-    font-awesome-ttf
+    enpass
+    font-awesome
+    font-awesome_4
     i3status-rust
     nitrogen
     picom
+    powerline
     powerline-fonts
     rofi
     terminus_font
@@ -39,8 +42,10 @@
     xorg.xkill
     zip
 
-    # emails
+    # Communication
+    discord
     thunderbird-bin
+    slack
 
     # networking
     aria2
@@ -145,7 +150,7 @@
 
   # Link config files
   home.file.".config/i3/config".source = ./configs/i3/config;
-  home.file.".config/i3status-rust/config.toml".source = ./configs/i3/status.toml;
+  home.file.".config/i3/status.toml".source = ./configs/i3/status.toml;
   home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty/alacritty.yml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 
