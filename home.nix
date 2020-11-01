@@ -14,10 +14,11 @@
     binutils
     clang-tools
     cmake
-    universal-ctags
+    direnv
     gdb
     gnumake
     jq
+    universal-ctags
 
     # window manager & friends / dotfiles stuff
     alacritty
@@ -34,6 +35,7 @@
     xdo
 
     # CLI utils
+    file
     htop
     manpages
     time
@@ -145,6 +147,8 @@
       vim-gutentags
       # Rust syntax highlighting
       rust-vim
+      # Support nix files
+      vim-nix
     ];
   };
 
