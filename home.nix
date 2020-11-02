@@ -14,7 +14,6 @@
     binutils
     clang-tools
     cmake
-    direnv
     gdb
     gnumake
     jq
@@ -82,6 +81,10 @@
     xdg.portal.enable = false;
   };
 
+  programs.direnv = {
+    enable = true;
+  };
+
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
@@ -113,7 +116,7 @@
     enable = true;
     userEmail = "florian.amsallem@epita.fr";
     userName = "Florian Amsallem";
-    ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ];
+    ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ];
     includes = [ { path = "~/.config/nixpkgs/configs/gitconfig"; } ];
   };
 
