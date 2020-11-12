@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export TERM="xterm-256color"
-export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
@@ -8,15 +7,6 @@ HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=7
-
-# User configuration
-
-# Preferred editor for local and remote sessions
-export EDITOR='nvim'
-export GIT_EDITOR='nvim'
-
-# ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

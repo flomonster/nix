@@ -73,6 +73,13 @@
     arandr
   ];
 
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    SSH_KEY_PATH = "~/.ssh/rsa_id";
+    GIT_EDITOR = "nvim";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "0";
+  };
+
   fonts.fontconfig.enable = true;
 
   nixpkgs.config = {
