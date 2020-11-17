@@ -91,3 +91,9 @@ map <C-l> <C-W>l
 map <C-h> <C-W>h
 map <C-j> <C-W>j
 map <C-k> <C-W>k
+
+"  /-------------------\
+" |     AutoCommand     |
+"  \-------------------/
+
+au filetype rust setlocal makeprg=cargo\ build
