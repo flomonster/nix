@@ -5,6 +5,10 @@
     # rust stuff
     rustup
 
+    # python
+    python3
+    pipenv
+
     # sysadmin
     docker-compose
 
