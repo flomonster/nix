@@ -12,7 +12,7 @@ export UPDATE_ZSH_DAYS=7
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias ll="ls --color -al"
+alias ll="ls --color -ahl"
 alias ls="ls --color"
 alias grep='grep -n --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,env}'
 alias feh='feh --conversion-timeout 1'
