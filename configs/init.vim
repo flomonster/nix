@@ -53,11 +53,10 @@ let g:deoplete#sources#clang#clang_header = "/usr/lib/clang"
 set completeopt-=preview
 
 " Racer
-set hidden
 let g:racer_cmd = "/home/flomonster/.cargo/bin/racer"
 
 " Neoformat
-map <Space> :Neoformat<CR>:w<CR>
+nnoremap <Space> :Neoformat<CR>:w<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
@@ -73,24 +72,24 @@ let g:airline#extensions#default#layout = [
 "  \-------------------/
 
 " Enter call :make command
-map <Enter> :make<CR><CR>
+nnoremap <Enter> :make<CR><CR>
 
 " Bind Buffer
 " Switch of buffer using tab (like firefox)
-map <Tab> :bn<CR>
-map <S-Tab> :bp<CR>
+nnoremap <Tab> :bn<CR>
+nnoremap <S-Tab> :bp<CR>
 " Switch of buffer using ctrl+n or ctrl+b
-map <C-n> :bn<CR>
-map <C-b> :bp<CR>
-" Quit a bugger with ctrl+q
-map <C-q> :bp<bar>sp<bar>bn<bar>bd<CR>
+nnoremap <C-n> :bn<CR>
+nnoremap <C-b> :bp<CR>
+" Quit a buffer with ctrl+q
+nnoremap <C-q> :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Bind Tiles
 " Used to move between buffers without W
-map <C-l> <C-W>l
-map <C-h> <C-W>h
-map <C-j> <C-W>j
-map <C-k> <C-W>k
+nnoremap <C-l> <C-W>l
+nnoremap <C-h> <C-W>h
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
 
 "  /-------------------\
 " |     AutoCommand     |
