@@ -13,7 +13,7 @@ set $tag1 
 set $tag2 
 set $tag3 
 set $tag4 
-set $tag5 
+set $tag5 
 set $tag6 
 set $tag7 
 set $tag8 
@@ -187,7 +187,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # exec_always polybar example
 bar {
-  font pango:DejaVu Sans Mono, FontAwesome 12
+  font pango:DejaVu Sans Mono, FontAwesome5 12
   status_command i3status-rs ~/.config/i3/status.toml
   colors {
         separator #666666
