@@ -21,6 +21,7 @@
     gdb
     gnumake
     jq
+    linuxPackages.perf
     universal-ctags
 
     # window manager & friends / dotfiles stuff
