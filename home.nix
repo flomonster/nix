@@ -26,6 +26,7 @@
 
     # window manager & friends / dotfiles stuff
     alacritty
+    autorandr
     enpass
     font-awesome
     font-awesome_4
