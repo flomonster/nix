@@ -77,6 +77,11 @@
 
     # system config
     arandr
+
+    # sncf
+    gradle_jdk11
+    jdk11
+    jetbrains.idea-community
   ];
 
   home.sessionVariables = {
