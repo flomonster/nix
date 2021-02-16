@@ -61,6 +61,7 @@
     # desktop
     evince
     firefox
+    chromium
 
     # audio / video
     pavucontrol
