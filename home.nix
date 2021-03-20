@@ -43,6 +43,7 @@
     file
     htop
     manpages
+    sshfs
     time
     tree
     unzip

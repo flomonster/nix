@@ -11,3 +11,5 @@
 	date = local
 [advice]
 	detachedHead = false
+[rebase]
+	autoSquash = true
