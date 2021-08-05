@@ -49,7 +49,7 @@ format = "%a %d/%m %R"
 
 [[block]]
 block = "net"
-device = "wlp3s0"
+device = "wlp0s20f3"
 ssid = true
 signal_strength = true
 speed_up = false
