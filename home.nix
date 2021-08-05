@@ -18,10 +18,14 @@
     binutils
     clang-tools
     cmake
+    dbeaver
     gdb
     gnumake
     jq
     linuxPackages.perf
+    postman
+    qgis
+    tig
     universal-ctags
 
     # window manager & friends / dotfiles stuff
@@ -68,6 +72,8 @@
     pavucontrol
     spotify
     vlc
+    kdenlive
+    kazam
 
     # image processing
     feh
