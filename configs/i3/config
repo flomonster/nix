@@ -76,6 +76,7 @@ bindsym $mod+p exec Enpass
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+bindsym $mod+n floating toggle
 
 # start a terminal
 bindsym $mod+Return exec alacritty
