@@ -14,8 +14,8 @@ interval = 60
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{mem_used_percents}"
+format_swap = "{swap_used_percents}"
 
 [[block]]
 block = "cpu"
@@ -34,6 +34,8 @@ on_click = "pavucontrol"
 [[block]]
 block = "bluetooth"
 mac = "2C:41:A1:C9:88:27"
+format = ""
+format_unavailable = ""
 
 [[block]]
 block = "music"
@@ -50,8 +52,5 @@ format = "%a %d/%m %R"
 [[block]]
 block = "net"
 device = "wlp0s20f3"
-ssid = true
-signal_strength = true
-speed_up = false
-speed_down = false
+format = "{ssid}"
 interval = 10
