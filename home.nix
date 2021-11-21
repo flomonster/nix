@@ -47,6 +47,7 @@
     file
     htop
     manpages
+    ncdu
     sshfs
     time
     tree
@@ -78,6 +79,7 @@
     # image processing
     feh
     gimp
+    inkscape
     scrot
 
     # 3d graphics
@@ -146,6 +148,7 @@
     userName = "Florian Amsallem";
     ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ];
     includes = [ { path = "~/.config/nixpkgs/configs/gitconfig"; } ];
+    lfs = { enable = true; };
   };
 
   programs.neovim = {
@@ -182,6 +185,11 @@
       vim-nix
     ];
   };
+
+  programs.vscode = {
+        enable = true;
+        package = pkgs.vscode;
+    };
 
   # Link config files
   home.file.".config/i3/config".source = ./configs/i3/config;
