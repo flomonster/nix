@@ -52,12 +52,12 @@
     time
     tree
     unzip
+    xclip
     xorg.xkill
     zip
 
     # Communication
     discord
-    thunderbird-bin
     slack
 
     # networking
@@ -75,6 +75,7 @@
     vlc
     kdenlive
     kazam
+    playerctl
 
     # image processing
     feh
