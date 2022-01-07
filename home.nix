@@ -198,10 +198,6 @@
   home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty/alacritty.yml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "flomonster";

@@ -7,11 +7,6 @@ name = "solarized-dark"
 separator = "<span font='15'></span>"
 
 [[block]]
-block = "battery"
-driver = "upower"
-interval = 60
-
-[[block]]
 block = "memory"
 display_type = "memory"
 format_mem = "{mem_used_percents}"
@@ -51,6 +46,6 @@ format = "%a %d/%m %R"
 
 [[block]]
 block = "net"
-device = "wlp0s20f3"
-format = "{ssid}"
+device = "enp34s0"
+format = "{ip}"
 interval = 10
