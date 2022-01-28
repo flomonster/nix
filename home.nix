@@ -195,6 +195,7 @@
   # Link config files
   home.file.".config/i3/config".source = ./configs/i3/config;
   home.file.".config/i3/status.toml".source = ./configs/i3/status.toml;
+  home.file.".config/i3/status_vert.toml".source = ./configs/i3/status_vert.toml;
   home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty/alacritty.yml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 
