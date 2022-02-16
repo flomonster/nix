@@ -90,7 +90,6 @@
     arandr
 
     # sncf
-    gradle_jdk11
     jdk11
     jetbrains.idea-community
   ];
@@ -190,6 +189,9 @@
   programs.vscode = {
         enable = true;
         package = pkgs.vscode;
+        extensions = with pkgs.vscode-extensions; [
+          vadimcn.vscode-lldb
+        ];
     };
 
   # Link config files
