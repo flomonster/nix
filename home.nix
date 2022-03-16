@@ -2,9 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    # rust stuff
-    rustup
-
     # python
     python3
     pipenv
@@ -25,6 +22,7 @@
     linuxPackages.perf
     postman
     qgis
+    rustup
     tig
     universal-ctags
 
@@ -46,8 +44,10 @@
     # CLI utils
     file
     htop
+    magic-wormhole
     manpages
     ncdu
+    ripgrep
     sshfs
     time
     tree
@@ -90,7 +90,7 @@
     arandr
 
     # sncf
-    jdk11
+    jdk17
     jetbrains.idea-community
   ];
 
@@ -189,9 +189,6 @@
   programs.vscode = {
         enable = true;
         package = pkgs.vscode;
-        extensions = with pkgs.vscode-extensions; [
-          vadimcn.vscode-lldb
-        ];
     };
 
   # Link config files
