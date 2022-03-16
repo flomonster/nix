@@ -10,15 +10,15 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $tag1 
-set $tag2 
-set $tag3 
-set $tag4 
-set $tag5 
+set $tag2 
+set $tag3 
+set $tag4 
+set $tag5 
 set $tag6 
 set $tag7 
 set $tag8 
-set $tag9 
-set $tag0 
+set $tag9 
+set $tag0 
 
 set $mod Mod4
 
