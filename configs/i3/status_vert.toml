@@ -28,7 +28,7 @@ on_click = "pavucontrol"
 
 [[block]]
 block = "bluetooth"
-mac = "2C:41:A1:C9:88:27"
+mac = "78:2B:64:CE:BB:20"
 format = ""
 format_unavailable = ""
 
