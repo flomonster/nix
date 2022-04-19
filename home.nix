@@ -22,7 +22,6 @@
     linuxPackages.perf
     postman
     qgis
-    rustup
     tig
     universal-ctags
 
@@ -30,16 +29,18 @@
     alacritty
     autorandr
     enpass
-    font-awesome
-    font-awesome_4
     i3status-rust
     nitrogen
     picom
+    rofi
+    xdo
+
+    # Fonts
+    font-awesome
+    font-awesome_4
     powerline
     powerline-fonts
-    rofi
     terminus_font
-    xdo
 
     # CLI utils
     file
@@ -177,8 +178,6 @@
       # Snippets
       vim-snippets
       ultisnips
-      # Tag management
-      vim-gutentags
       # Rust syntax highlighting
       rust-vim
       # Support nix files
