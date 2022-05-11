@@ -45,15 +45,6 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 
-# Backlight
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
-bindsym $mod+Shift+Up exec xbacklight -inc 5
-bindsym $mod+Shift+Down exec xbacklight -dec 5
-
-bindsym $mod+Shift+Right exec /usr/local/bin/kb-light.py + 2
-bindsym $mod+Shift+Left exec /usr/local/bin/kb-light.py - 2
-
 # Firefox
 bindsym $mod+grave exec firefox
 bindsym $mod+Escape exec firefox
