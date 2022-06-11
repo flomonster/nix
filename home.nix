@@ -18,10 +18,12 @@
     dbeaver
     gdb
     gnumake
+    gnupg
     jq
     linuxPackages.perf
     postman
     qgis
+    sops
     tig
     universal-ctags
 
@@ -46,7 +48,7 @@
     file
     htop
     magic-wormhole
-    manpages
+    man-pages
     ncdu
     ripgrep
     sshfs
