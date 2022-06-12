@@ -48,5 +48,8 @@ done_cmd = "notify-send 'Timer Finished'"
 
 [[block]]
 block = "net"
-format = " $icon "
-device = "enp34s0"
+format = " $icon {$signal_strength $ssid|Wired connection} "
+
+[[block]]
+block = "battery"
+format = " $icon $percentage "
