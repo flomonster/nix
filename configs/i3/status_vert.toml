@@ -38,5 +38,9 @@ short = " $icon $timestamp.datetime(f:%R) "
 
 [[block]]
 block = "net"
-format = " $icon "
-device = "enp34s0"
+format = " $icon {$signal_strength $ssid|Wired connection} "
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}"
