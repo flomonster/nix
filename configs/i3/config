@@ -184,6 +184,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # exec_always polybar example
 bar {
+  output eDP-1
   output DP-2
   output DP-4
   font pango:DejaVu Sans Mono, FontAwesome5 12
