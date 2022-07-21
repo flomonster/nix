@@ -6,9 +6,6 @@
     python3
     pipenv
 
-    # sysadmin
-    docker-compose
-
     # dev tools
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
@@ -45,6 +42,7 @@
     terminus_font
 
     # CLI utils
+    bat
     file
     htop
     magic-wormhole
