@@ -103,8 +103,6 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "0";
   };
 
-  services.dropbox.enable = true;
-
   fonts.fontconfig.enable = true;
 
   nixpkgs.config = {
