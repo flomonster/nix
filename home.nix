@@ -89,6 +89,7 @@
 
     # system config
     arandr
+    neofetch
 
     # sncf
     jdk17
