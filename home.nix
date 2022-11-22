@@ -20,6 +20,7 @@
     linuxPackages.perf
     postman
     qgis
+    skim
     sops
     tig
     universal-ctags

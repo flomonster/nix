@@ -13,3 +13,5 @@
 	detachedHead = false
 [rebase]
 	autoSquash = true
+[alias]
+	fixup = "!git log -n 50 --oneline --no-merges | sk -d=' ' --preview='git show --color {1}' | cut -c -7 | xargs -o git commit --fixup"
