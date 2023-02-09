@@ -40,6 +40,7 @@
     powerline
     powerline-fonts
     terminus_font
+    gnome.gnome-font-viewer
 
     # CLI utils
     bat
