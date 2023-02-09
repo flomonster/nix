@@ -78,6 +78,7 @@
     kdenlive
     kazam
     playerctl
+    obs-studio
 
     # image processing
     feh
