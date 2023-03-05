@@ -78,7 +78,6 @@
     kdenlive
     kazam
     playerctl
-    obs-studio
 
     # image processing
     feh
@@ -98,6 +97,7 @@
     jetbrains.idea-community
   ];
 
+
   home.sessionVariables = {
     EDITOR = "nvim";
     SSH_KEY_PATH = "~/.ssh/rsa_id";
@@ -115,6 +115,13 @@
 
   programs.direnv = {
     enable = true;
+  };
+
+  programs.obs-studio = {
+    enable = true;
+    plugins = with pkgs.obs-studio-plugins; [
+      obs-backgroundremoval
+    ];
   };
 
   programs.zsh = {
