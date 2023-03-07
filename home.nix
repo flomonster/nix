@@ -19,6 +19,7 @@
     jq
     linuxPackages.perf
     postman
+    qgis
     skim
     sops
     tig
