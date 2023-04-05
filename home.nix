@@ -85,6 +85,7 @@
     gimp
     inkscape
     scrot
+    xcolor
 
     # 3d graphics
     blender
