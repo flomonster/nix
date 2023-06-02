@@ -1,16 +1,16 @@
-icons = "awesome"
+[icons]
+icons = "awesome4"
 
 [theme]
-name = "solarized-dark"
+theme = "solarized-dark"
 
 [theme.overrides]
 separator = "<span font='15'></span>"
 
 [[block]]
 block = "memory"
-display_type = "memory"
-format_mem = "{mem_used_percents}"
-format_swap = "{swap_used_percents}"
+format = " $icon $mem_total_used_percents.eng(w:2) "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
 
 [[block]]
 block = "cpu"
@@ -19,26 +19,24 @@ interval = 1
 [[block]]
 block = "load"
 interval = 1
-format = "{1m}"
 
 [[block]]
 block = "sound"
 driver = "auto"
-on_click = "pavucontrol"
 
 [[block]]
 block = "bluetooth"
 mac = "78:2B:64:CE:BB:20"
 format = ""
-format_unavailable = ""
+disconnected_format = ""
 
 [[block]]
 block = "time"
-interval = 60
-format = "%a %d/%m %R"
+interval = 10
+[block.format]
+short = " $icon $timestamp.datetime(f:%R) "
 
 [[block]]
 block = "net"
+format = " $icon "
 device = "enp34s0"
-format = "{ip}"
-interval = 10
