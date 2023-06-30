@@ -30,6 +30,7 @@
     autorandr
     enpass
     i3status-rust
+    libnotify
     nitrogen
     picom
     rofi
