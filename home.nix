@@ -66,6 +66,7 @@
 
     # networking
     aria2
+    openconnect
     rsync
 
     # desktop
@@ -98,6 +99,7 @@
     # sncf
     jdk17
     jetbrains.idea-community
+    gp-saml-gui
   ];
 
 
