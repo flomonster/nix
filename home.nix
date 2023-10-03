@@ -75,12 +75,13 @@
     chromium
 
     # audio / video
+    kazam
+    kdenlive
+    pamixer
     pavucontrol
+    playerctl
     spotify
     vlc
-    kdenlive
-    kazam
-    playerctl
 
     # image processing
     feh
