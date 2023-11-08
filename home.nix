@@ -63,6 +63,7 @@
     # Communication
     discord
     slack
+    signal-desktop
 
     # networking
     aria2
