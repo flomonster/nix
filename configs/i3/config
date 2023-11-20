@@ -184,8 +184,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 # exec_always polybar example
 bar {
-  output HDMI-2
   output DP-2
+  output DP-4
   font pango:DejaVu Sans Mono, FontAwesome5 12
   status_command i3status-rs ~/.config/i3/status.toml
   colors {
@@ -200,7 +200,7 @@ bar {
 }
 
 bar {
-  output HDMI-1
+  output HDMI-0
   font pango:DejaVu Sans Mono, FontAwesome5 12
   status_command i3status-rs ~/.config/i3/status_vert.toml
   colors {
