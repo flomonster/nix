@@ -164,7 +164,7 @@
     enable = true;
     userEmail = "florian.amsallem@epita.fr";
     userName = "Florian Amsallem";
-    ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ];
+    ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv" ];
     includes = [ { path = "~/.config/home-manager/configs/gitconfig"; } ];
     lfs = { enable = true; };
   };
