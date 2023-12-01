@@ -10,6 +10,7 @@
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
     binutils
+    bruno
     clang-tools
     cmake
     dbeaver
@@ -18,7 +19,6 @@
     gnupg
     jq
     linuxPackages.perf
-    postman
     qgis
     skim
     sops
