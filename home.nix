@@ -27,7 +27,6 @@
 
     # window manager & friends / dotfiles stuff
     alacritty
-    autorandr
     enpass
     i3status-rust
     libnotify
@@ -59,6 +58,7 @@
     xclip
     xorg.xkill
     zip
+    maestral
 
     # Communication
     discord
@@ -111,8 +111,6 @@
     GIT_EDITOR = "nvim";
     QT_AUTO_SCREEN_SCALE_FACTOR = "0";
   };
-
-  services.dropbox.enable = true;
 
   fonts.fontconfig.enable = true;
 
