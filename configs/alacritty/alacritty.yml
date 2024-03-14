@@ -450,7 +450,7 @@ key_bindings:
   #- { key: Q,      mods: Command, action: Quit             }
   #- { key: W,      mods: Command, action: Quit             }
 
-  - { key: N, mods: Control|Shift, command: { program: "/home/flomonster/.config/home-manager/configs/alacritty/spawn-alacritty-cwd" }}
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance                  }
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
   - { key: L,        mods: Control, action: ClearLogNotice                   }
