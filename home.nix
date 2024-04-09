@@ -160,7 +160,7 @@
 
   programs.git = {
     enable = true;
-    userEmail = "florian.amsallem@epita.fr";
+    userEmail = "florian.amsallem@gmail.com";
     userName = "Florian Amsallem";
     ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv" ];
     includes = [ { path = "~/.config/home-manager/configs/gitconfig"; } ];
