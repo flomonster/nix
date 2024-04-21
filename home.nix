@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
-
+let
+  unstable = import <nixos-unstable> {};
+in
 {
   home.packages = with pkgs; [
     # python
@@ -10,7 +12,7 @@
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
     binutils
-    bruno
+    unstable.postman
     clang-tools
     cmake
     dbeaver
