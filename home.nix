@@ -47,8 +47,10 @@ in
 
     # CLI utils
     bat
+    btop
+    duf
     file
-    htop
+    maestral
     magic-wormhole
     man-pages
     ncdu
@@ -60,7 +62,6 @@ in
     xclip
     xorg.xkill
     zip
-    maestral
 
     # Communication
     discord
