@@ -65,8 +65,9 @@ in
 
     # Communication
     discord
-    slack
+    element-desktop
     signal-desktop
+    slack
 
     # networking
     aria2
