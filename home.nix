@@ -1,8 +1,10 @@
-{ config, pkgs, ... }:
-let
-  unstable = import <nixos-unstable> {};
-in
 {
+  config,
+  pkgs,
+  ...
+}: let
+  unstable = import <nixos-unstable> {};
+in {
   home.packages = with pkgs; [
     # python
     python3
@@ -12,10 +14,9 @@ in
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
     binutils
-    unstable.postman
+    postman
     clang-tools
     cmake
-    dbeaver
     gdb
     gnumake
     gnupg
@@ -44,6 +45,7 @@ in
     powerline-fonts
     terminus_font
     gnome.gnome-font-viewer
+    ibm-plex
 
     # CLI utils
     bat
@@ -108,7 +110,6 @@ in
     gp-saml-gui
   ];
 
-
   home.sessionVariables = {
     EDITOR = "nvim";
     SSH_KEY_PATH = "~/.ssh/rsa_id";
@@ -137,7 +138,7 @@ in
 
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     history.extended = true;
     initExtra = ''
       source ${./configs/zsh/aliases.sh}
@@ -161,14 +162,13 @@ in
     };
   };
 
-
   programs.git = {
     enable = true;
     userEmail = "florian.amsallem@gmail.com";
     userName = "Florian Amsallem";
-    ignores = [ "*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv" ];
-    includes = [ { path = "~/.config/home-manager/configs/gitconfig"; } ];
-    lfs = { enable = true; };
+    ignores = ["*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv"];
+    includes = [{path = "~/.config/home-manager/configs/gitconfig";}];
+    lfs = {enable = true;};
   };
 
   programs.neovim = {
@@ -205,15 +205,15 @@ in
   };
 
   programs.vscode = {
-        enable = true;
-        package = pkgs.vscode;
-    };
+    enable = true;
+    package = pkgs.vscode;
+  };
 
   # Link config files
   home.file.".config/i3/config".source = ./configs/i3/config;
   home.file.".config/i3/status.toml".source = ./configs/i3/status.toml;
   home.file.".config/i3/status_vert.toml".source = ./configs/i3/status_vert.toml;
-  home.file.".config/alacritty/alacritty.yml".source = ./configs/alacritty/alacritty.yml;
+  home.file.".config/alacritty/alacritty.toml".source = ./configs/alacritty/alacritty.toml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 
   # Home Manager needs a bit of information about you and the
