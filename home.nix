@@ -56,6 +56,7 @@ in {
     magic-wormhole
     man-pages
     ncdu
+    oxker
     ripgrep
     sshfs
     time
