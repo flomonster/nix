@@ -99,7 +99,9 @@ in {
     xcolor
 
     # 3d graphics
-    blender
+    (blender.override {
+      cudaSupport = true;
+    })
 
     # system config
     arandr
