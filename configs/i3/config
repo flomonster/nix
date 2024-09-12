@@ -200,7 +200,7 @@ bar {
 }
 
 bar {
-  output HDMI-0
+  output DP-0
   font pango:DejaVu Sans Mono, FontAwesome5 12
   status_command i3status-rs ~/.config/i3/status_vert.toml
   colors {
