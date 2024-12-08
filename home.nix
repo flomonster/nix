@@ -48,10 +48,13 @@ in {
     ibm-plex
 
     # CLI utils
+    ansible
+    awscli2
     bat
     btop
     duf
     file
+    k9s
     maestral
     magic-wormhole
     man-pages
@@ -74,8 +77,8 @@ in {
 
     # networking
     aria2
-    openconnect
     rsync
+    vpnc-scripts
 
     # desktop
     evince
