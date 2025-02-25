@@ -14,7 +14,6 @@ in {
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
     binutils
-    postman
     clang-tools
     cmake
     gdb
@@ -22,10 +21,12 @@ in {
     gnupg
     jq
     linuxPackages.perf
+    postman
     qgis
     skim
     sops
     tig
+    tldr
     universal-ctags
 
     # window manager & friends / dotfiles stuff
@@ -81,9 +82,9 @@ in {
     vpnc-scripts
 
     # desktop
+    chromium
     evince
     firefox
-    chromium
 
     # audio / video
     kazam
@@ -154,6 +155,7 @@ in {
       bindkey "^[[3~" delete-char
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
+      PATH=$PATH:/home/flomonster/.cargo/bin/
     '';
 
     plugins = [
