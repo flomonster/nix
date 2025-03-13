@@ -1,5 +1,21 @@
+[init]
+	defaultBranch = main
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
 [pull]
 	rebase = True
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	autoSetupRemote = true
+	followTags = true
 [core]
 	editor = nvim
 [gpg]
@@ -13,7 +29,13 @@
 	detachedHead = false
 [rebase]
 	autoSquash = true
+	autoStash = true
+	updateRefs = true
 [rerere]
 	enabled = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
 [alias]
 	fixup = "!git log -n 50 --oneline --no-merges | sk -d=' ' --preview='git show --color {1}' | cut -c -7 | xargs -o git commit --fixup"
