@@ -45,7 +45,7 @@ in {
     powerline
     powerline-fonts
     terminus_font
-    gnome.gnome-font-viewer
+    gnome-font-viewer
     ibm-plex
 
     # CLI utils
