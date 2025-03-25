@@ -17,6 +17,7 @@ in {
     clang-tools
     cmake
     gdb
+    gh
     gnumake
     gnupg
     jq
