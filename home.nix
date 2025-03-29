@@ -8,7 +8,7 @@ in {
   home.packages = with pkgs; [
     # python
     python3
-    pipenv
+    uv
 
     # dev tools
     (lib.hiPrio gcc)
