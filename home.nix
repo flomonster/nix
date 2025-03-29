@@ -22,6 +22,7 @@ in {
     gnupg
     jq
     linuxPackages.perf
+    neofetch
     postman
     qgis
     skim
@@ -30,15 +31,15 @@ in {
     tldr
     universal-ctags
 
+
     # window manager & friends / dotfiles stuff
     alacritty
     enpass
     i3status-rust
     libnotify
-    nitrogen
     picom
     rofi
-    xdo
+    swaybg
 
     # Fonts
     font-awesome
@@ -99,18 +100,14 @@ in {
     # image processing
     feh
     gimp
+    sway-contrib.grimshot
     inkscape
-    scrot
     xcolor
 
     # 3d graphics
     (blender.override {
       cudaSupport = true;
     })
-
-    # system config
-    arandr
-    neofetch
 
     # sncf
     jdk17
@@ -219,9 +216,9 @@ in {
   };
 
   # Link config files
-  home.file.".config/i3/config".source = ./configs/i3/config;
-  home.file.".config/i3/status.toml".source = ./configs/i3/status.toml;
-  home.file.".config/i3/status_vert.toml".source = ./configs/i3/status_vert.toml;
+  home.file.".config/sway/config".source = ./configs/sway/config;
+  home.file.".config/sway/status.toml".source = ./configs/sway/status.toml;
+  home.file.".config/sway/status_vert.toml".source = ./configs/sway/status_vert.toml;
   home.file.".config/alacritty/alacritty.toml".source = ./configs/alacritty/alacritty.toml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 
