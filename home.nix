@@ -168,6 +168,9 @@ in {
     };
   };
 
+  # Enable fzf for command line fuzzy finder
+  programs.fzf.enable = true;
+
   programs.git = {
     enable = true;
     userEmail = "florian.amsallem@gmail.com";
