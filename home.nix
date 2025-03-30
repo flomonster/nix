@@ -57,6 +57,7 @@ in {
     btop
     duf
     file
+    imagemagick
     k9s
     maestral
     magic-wormhole
@@ -219,9 +220,10 @@ in {
   };
 
   # Link config files
-  home.file.".config/sway/config".source = ./configs/sway/config;
-  home.file.".config/sway/status.toml".source = ./configs/sway/status.toml;
-  home.file.".config/sway/status_vert.toml".source = ./configs/sway/status_vert.toml;
+  home.file.".config/sway" = {
+    source = ./configs/sway;
+    recursive = true;
+  };
   home.file.".config/alacritty/alacritty.toml".source = ./configs/alacritty/alacritty.toml;
   home.file.".config/picom/picom.conf".source = ./configs/picom.conf;
 

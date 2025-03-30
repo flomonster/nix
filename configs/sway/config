@@ -32,7 +32,7 @@ bindsym $mod+c exec firefox --new-window https://www.scribens.fr/
 
 
 # Lock
-bindsym $mod+space exec swaylock -eui ~/.config/sway/lock.png
+bindsym $mod+space exec ~/.config/sway/lock.sh
 
 # Volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 2

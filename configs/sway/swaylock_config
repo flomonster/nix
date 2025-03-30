@@ -1,0 +1,17 @@
+ignore-empty-password
+indicator-caps-lock
+
+indicator-thickness=15
+indicator-radius=100
+
+line-uses-inside
+key-hl-color=718BDE
+
+ring-color=94a6e3
+ring-ver-color=ebecf0
+ring-wrong-color=8A93B1
+
+inside-color=00000000
+inside-ver-color=8A93B1A0
+inside-wrong-color=DE717157
+inside-clear-color=00000000
