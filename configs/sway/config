@@ -1,5 +1,7 @@
 # sway config file
 
+include /etc/sway/config.d/*
+
 # Configure monitor
 output DP-1 mode 2560x1440 pos 3840 191 bg ~/.config/wallpaper/main.png fill
 output DP-2 mode 1920x1080 pos 2760 0 transform 270 bg ~/.config/wallpaper/vertical.png fill
