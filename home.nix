@@ -91,7 +91,6 @@ in {
 
     # audio / video
     kazam
-    kdenlive
     pamixer
     pavucontrol
     playerctl
