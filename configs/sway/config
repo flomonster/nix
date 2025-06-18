@@ -218,9 +218,13 @@ bar {
 }
 
 input * {
-    xkb_layout us
-    xkb_variant intl
+    xkb_layout us,fr
+    xkb_variant intl,ergol
 }
+bindsym $mod+q exec swaymsg input type:keyboard xkb_switch_layout next
+
+# Required for nice cursor on firefox
+seat * xcursor_theme Adwaita
 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id dropbox start
