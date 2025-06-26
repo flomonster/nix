@@ -90,7 +90,7 @@ in {
     firefox
 
     # audio / video
-    kazam
+    kooha
     pamixer
     pavucontrol
     playerctl
