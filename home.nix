@@ -59,12 +59,14 @@ in {
     file
     imagemagick
     k9s
-    maestral
+    maestral # Dropbox
     magic-wormhole
     man-pages
     ncdu
     oxker
+    restic
     ripgrep
+    seafile-client
     sshfs
     time
     tree
