@@ -92,12 +92,13 @@ in {
     firefox
 
     # audio / video
-    kooha
     pamixer
     pavucontrol
     playerctl
+    slurp # select zone
     spotify
     vlc
+    wf-recorder
 
     # image processing
     feh
@@ -175,8 +176,10 @@ in {
 
   programs.git = {
     enable = true;
-    userEmail = "florian.amsallem@gmail.com";
-    userName = "Florian Amsallem";
+    settings.user = {
+      email = "florian.amsallem@gmail.com";
+      name = "Florian Amsallem";
+    };
     ignores = ["*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv"];
     includes = [{path = "~/.config/home-manager/configs/gitconfig";}];
     lfs = {enable = true;};
