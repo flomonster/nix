@@ -21,7 +21,7 @@ in {
     gnumake
     gnupg
     jq
-    linuxPackages.perf
+    perf
     neofetch
     postman
     qgis
