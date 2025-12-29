@@ -95,10 +95,8 @@ in {
     pamixer
     pavucontrol
     playerctl
-    slurp # select zone
     spotify
     vlc
-    wf-recorder
 
     # image processing
     feh
@@ -114,7 +112,7 @@ in {
 
     # sncf
     jdk17
-    jetbrains.idea-community
+    jetbrains.idea
     gp-saml-gui
   ];
 
@@ -148,7 +146,7 @@ in {
     enable = true;
     autosuggestion.enable = true;
     history.extended = true;
-    initExtra = ''
+    initContent = ''
       source ${./configs/zsh/aliases.sh}
       source ${./configs/zsh/p10k.zsh}
       bindkey "^[[H" beginning-of-line
