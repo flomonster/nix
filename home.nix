@@ -21,8 +21,8 @@ in {
     gnumake
     gnupg
     jq
-    perf
     neofetch
+    perf
     postman
     qgis
     skim
@@ -55,6 +55,7 @@ in {
     awscli2
     bat
     btop
+    dive
     duf
     file
     imagemagick
