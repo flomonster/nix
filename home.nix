@@ -21,7 +21,7 @@ in {
     gnumake
     gnupg
     jq
-    neofetch
+    hyfetch
     perf
     postman
     qgis
@@ -34,7 +34,7 @@ in {
 
     # window manager & friends / dotfiles stuff
     alacritty
-    enpass
+    unstable.enpass
     i3status-rust
     libnotify
     picom
@@ -73,7 +73,7 @@ in {
     tree
     unzip
     xclip
-    xorg.xkill
+    xkill
     zip
 
     # Communication
@@ -112,7 +112,7 @@ in {
     })
 
     # sncf
-    jdk17
+    jdk21
     jetbrains.idea
     gp-saml-gui
   ];
@@ -179,6 +179,7 @@ in {
       email = "florian.amsallem@gmail.com";
       name = "Florian Amsallem";
     };
+    signing.format = "openpgp";
     ignores = ["*.o" "*.a" "*.so" "*.pyc" "tags" ".envrc" ".direnv"];
     includes = [{path = "~/.config/home-manager/configs/gitconfig";}];
     lfs = {enable = true;};
@@ -186,6 +187,8 @@ in {
 
   programs.neovim = {
     enable = true;
+    withRuby = false;
+    withPython3 = true;
     viAlias = true;
     vimAlias = true;
     extraConfig = builtins.readFile ./configs/init.vim;
