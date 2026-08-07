@@ -13,6 +13,7 @@ in {
     # dev tools
     (lib.hiPrio gcc)
     (lib.lowPrio clang)
+    android-studio
     binutils
     clang-tools
     cmake
@@ -20,8 +21,8 @@ in {
     gh
     gnumake
     gnupg
-    jq
     hyfetch
+    jq
     perf
     postman
     qgis
@@ -29,6 +30,7 @@ in {
     sops
     tig
     tldr
+    tmux
     universal-ctags
 
 
@@ -107,9 +109,7 @@ in {
     xcolor
 
     # 3d graphics
-    (blender.override {
-      cudaSupport = true;
-    })
+    blender
 
     # sncf
     jdk21
@@ -132,6 +132,7 @@ in {
     xdg.portal.enable = false;
   };
 
+  programs.mise.enable = true;
   programs.direnv = {
     enable = true;
   };
